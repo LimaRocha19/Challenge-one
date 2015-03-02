@@ -14,7 +14,6 @@
 
 @property NSString *nome;
 @property (readonly) CLLocationCoordinate2D coordenadas;
-//@property UIImage *estacao;
 @property UIColor *linha;
 
 -(id)initWithNome:(NSString *)n andLatitude:(CLLocationDegrees)latitude andLongitude:(CLLocationDegrees)longitude andLinha:(UIColor *)l;

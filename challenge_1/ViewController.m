@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Estações.h"
 #import "Station.h"
 #import "StationMap.h"
 
@@ -20,12 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    Station *luz = [[Station alloc] initWithNome:@"Luz" andLatitude:-23.537735 andLongitude:-46.633675 andLinha: [UIColor yellowColor]];
-    
-    StationMap *pm = [[StationMap alloc] initWithCoordinate:luz.coordenadas title:luz.nome];
-    
-    [Mapinha addAnnotation:pm];
+    Estac_o_es *stationList = [Estac_o_es listaEstacoes];
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;

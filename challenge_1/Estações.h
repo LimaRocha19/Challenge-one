@@ -10,6 +10,8 @@
 
 @interface Estac_o_es : NSObject
 
-@property NSMutableArray *estacoes;
+@property NSArray *estacoes;
+
++(id)listaEstacoes;
 
 @end
